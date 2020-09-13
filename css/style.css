@@ -1,0 +1,30 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+</style>
+ :root{
+   --font-family:'ubuntu',monospace;
+   --color-border: #e5e5e5;
+
+ }
+
+ .font-ubuntu{
+   font:normal 500 16px var(--font-family);
+ }
+
+ #register{
+   padding: 5% 0;
+   background: url("assets/img-4.png")no-repeat;
+   background-size: cover;
+ }
+
+ .uploud-profile-img{
+   position: relative;
+   width: 10%;
+   margin-left: auto;
+   margin-right: auto;
+   transition: filter .8s ease;
+ }
+
+ .uploud-profile-img:hover{
+   filter: drop-shadow(1px 1px 22px #7584bb);
+ }
