@@ -11,9 +11,10 @@
    font:normal 500 16px var(--font-family);
  }
 
- #register{
+ .register{
+
    padding: 5% 0;
-   background: url("assets/img-4.png")no-repeat;
+   background-image: url("../assets/img2.png") no-repeat;
    background-size: cover;
  }
 
@@ -27,4 +28,36 @@
 
  .uploud-profile-img:hover{
    filter: drop-shadow(1px 1px 22px #7584bb);
+ }
+ #uploud-profile{
+   position: absolute;
+   top: 0;
+   z-index: 10;
+   width: 200px;
+   margin-top: 0px;
+   opacity: 0;
+
+ }
+
+ #uploud-profile::-webkit-file-upload-button{
+   visibility: hidden;
+ }
+
+ #uploud-profile::before{
+   content: '';
+   display: inline-block;
+   width: 200px;
+   height: 200px;
+   cursor: pointer;
+   border-radius: 50%;
+ }
+ .uploud-profile-img .camera-icon{
+   position: absolute;
+   top: 70px;
+   width: 60px!important;
+   filter: invert(30%)!important;
+ }
+
+ .uploud-profile-img:hover .camera-icon{
+   filter: invert(100%)!important;
  }
