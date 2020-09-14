@@ -1,7 +1,7 @@
 
 <?php include 'header.php'; ?>
 
-      <section class="register">
+      <section id="register">
         <div class="row m-0">
           <div class="col-lg-4 offset-lg-2">
             <div class="text-center pb-5">
@@ -23,7 +23,7 @@
 
             </div>
             <div class="d-flex justify-content-center">
-              <form id="reg-form" action="login.php" method="post" enctype="multipart/form-data">
+              <form id="reg-form" action="register.php" method="post" enctype="multipart/form-data">
                 <div class="form-row">
                   <div class="col">
                     <input type="text" name="FirstName" placeholder="FirstName" class="form-control"id="FirstName">
@@ -47,6 +47,8 @@
                 <div class="form-row my-4">
                   <div class="col">
                     <input type="password" name="confirm-password" required placeholder="Confirm password" class="form-control"id="confirm-password">
+                    <small id="confirm-err" class="text-danger"></small>
+
                 </div>
                 </div>
 
@@ -56,7 +58,7 @@
                 </div>
 
                 <div class="submit-btn text-center my-5">
-                  <button type="button" class="btn btn-warning rounded-pill text-dark px-5" name="button">Continue</button>
+                  <button type="submit" class="btn btn-warning rounded-pill text-dark px-5">Continue</button>
                 </div>
 
               </form>
@@ -67,4 +69,6 @@
 
       </section>
 
-<?php include 'footer.php'; ?>
+<?php
+include 'footer.php';
+  ?>
