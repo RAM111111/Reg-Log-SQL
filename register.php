@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                 </div>
                 <img class="img rounded-circle" src="assets/img1.svg" width="200px" height="200px" alt="img1">
                 <small class="form-text text-black-50">Choose image</small>
-                <input type="file" name="profiluploud" class="form-control-file" id="uploud-profile">
+                <input type="file" form="reg-form" name="profiluploud" class="form-control-file" id="uploud-profile">
               </div>
 
 

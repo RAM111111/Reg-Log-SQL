@@ -12,11 +12,15 @@
    font:normal 500 16px var(--font-family);
  }
 
- .register{
-
+ #register ,
+ #login_id{
    padding: 5% 0;
-   background-image: url("assets/img2.png") no-repeat;
+   background: url("assets/img1.svg") no-repeat;
    background-size: cover;
+ }
+
+ #login_id{
+   padding: 10% 0;
  }
 
  .uploud-profile-img{
@@ -68,7 +72,10 @@
 }
 #reg-form input[type='text'],
 #reg-form input[type='email'],
-#reg-form input[type='password']{
+#reg-form input[type='password'],
+#log-form input[type='text'],
+#log-form input[type='email'],
+#log-form input[type='password']{
   border: none;
   border-radius: unset;
   border-bottom: 1px solid var(--color-border);
